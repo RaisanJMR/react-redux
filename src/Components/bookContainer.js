@@ -15,7 +15,7 @@ function bookContainer({ totalNumOFBooks, buyBook, sellBook }) {
 // mapStateToProps
 const mapStateToProps = (state) => {
   return {
-    totalNumOFBooks: state.totalNumOFBooks,
+    totalNumOFBooks: state.book.totalNumOFBooks,
   };
 };
 // mapDispatchToProps
