@@ -1,15 +1,16 @@
-import { BUY_ICECREAM } from './iceCreamTypes';
+import { BUY_CAKE } from './cakeTypes';
 
 const initialState = {
-  totalIceCream: 25,
+  totalcakes: 20,
 };
 
 const cakeReducer = (state = initialState, action) => {
+  console.log('USER ACTION>>>',action.type);
   switch (action.type) {
-    case BUY_ICECREAM:
+    case BUY_CAKE:
       return {
         ...state,
-        totalIceCream: state.totalIceCream - 1,
+        totalcakes: state.totalcakes - 1,
       };
     default:
       return state;

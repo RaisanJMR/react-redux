@@ -1,17 +1,14 @@
 import React from 'react';
-import BookContainer from './Components/bookContainer';
-import { Provider } from 'react-redux';
 import store from './redux/store';
-import HooksCakecontainer from './Components/hooksCakecontainer';
-import IceCreamContainer from './Components/iceCreamContainer';
-
+import { Provider } from 'react-redux';
+import CakeComponent from './Components/CakeComponent';
+import IceCreamComponent from './Components/IceCreamComponent';
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <BookContainer />
-        <HooksCakecontainer />
-        <IceCreamContainer/>
+        <CakeComponent />
+        <IceCreamComponent />
       </div>
     </Provider>
   );

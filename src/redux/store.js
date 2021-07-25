@@ -1,14 +1,5 @@
-import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
+import { createStore } from 'redux';
+import rootReducer from './RootReducer';
 
-// import bookReducer from './book/bookReducer';
-// import iceCreamReducer from './iceCream/iceCreamReducer';
-import logger from 'redux-logger';
-import rootReducer from './rootReducer';
-
-const store = createStore(
-  rootReducer,
-  composeWithDevTools(applyMiddleware(logger))
-);
-
+const store = createStore(rootReducer);
 export default store;
